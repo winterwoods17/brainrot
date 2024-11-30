@@ -1,0 +1,248 @@
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px; /* Adjust padding for better space */
+  background-image: url('images/greyson-joralemon-9IBqihqhuHc-unsplash\ \(2\).jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire body */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+/* Header Styling */
+#home-page h1 {
+  color: #081c15;
+  font-size: 42px; /* Made heading a bit bigger */
+  margin-bottom: 30px; /* Increased space below heading */
+  font: italic small-caps bold 40px/2 cursive;
+}
+
+/* Cards Styling */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Increased gap between cards */
+  margin-top: 100px; /* Reduced top margin */
+}
+
+.card {
+  padding: 50px 100px; /* Increased padding for larger cards */
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+  color: #1b263b;
+  font-size: 28px; /* Increased font size for better visibility */
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  background-color: #ffd60a;
+  color: #0d1b2a;
+  transform: scale(1.2);
+}
+
+/* Home Page Section */
+#home-page {
+  display: block;
+}
+
+/* Game Page Section */
+#game-page {
+  display: none;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Space between grid and game-right */
+  margin-top: 100px;
+  
+}
+
+/* Grid Section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px); /* 5 columns */
+  gap: 2px;
+  justify-content: center;
+  width: 300px; /* Uniform width */
+  height: 300px; /* Uniform height */
+  background-color: rgba(255, 255, 255, 0.7);/* Optional for better visibility */
+  padding: 30px; /* Padding inside the grid */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.grid div {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+/* Game Right Section */
+.game-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space between elements */
+  width: 300px; /* Match grid width */
+  height: 300px; /* Match grid height */
+  background-color: rgba(255, 255, 255, 0.7); /* Optional for better visibility */
+  padding: 30px;
+  margin-left: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  border-radius: 15px;
+}
+
+#category-title {
+  font-size: 24px;
+  color: #333;
+}
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;/* Fallback */
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#result-image {
+  max-width: 100%;
+  height: auto;
+  margin-left: 500px;
+}
+
+
+#lives {
+  font-size: 22px; /* Increased font size for lives */
+  color: red;
+  margin-bottom: 20px; /* Added margin below lives count */
+}
+
+#message {
+  font-size: 22px;
+  color: white;
+  padding-top: 30px;
+}
+
+/* Button Styling */
+button {
+  margin: 15px;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#reveal-button {
+  background-color: #28a745;  
+  color: white;
+  border-radius: 5px;
+}
+
+#reveal-button:hover {
+  background-color: #218838;  
+}
+
+/* Style for the Submit Button */
+#submit-button {
+  background-color: red;  /* Blue */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#submit-button:hover {
+  background-color: darkred;  /* Darker blue for hover effect */
+}
+
+/* Style for the Go Back Button */
+#go-back-button {
+  background-color: rgb(237, 213, 213);  /* Red */
+  color:black;
+  border-radius: 5px;
+}
+
+#go-back-button:hover {
+  background-color: gray;  /* Darker red for hover effect */
+}
+
+
+#guess-input {
+  padding: 12px;
+  width: 250px; /* Increased width of guess input */
+  font-size: 18px;
+}
+
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  body {
+      padding: 20px;
+  }
+
+  .cards {
+      flex-direction: column;
+      gap: 30px; /* Adjusted gap for smaller screens */
+  }
+
+  .card {
+      width: 90%; /* Adjusted width for smaller screens */
+      font-size: 20px;
+      padding: 40px 80px; /* Adjusted padding for better fit */
+  }
+
+  .game-container {
+      flex-direction: column; /* Stack sections vertically */
+  }
+
+  .grid, .game-right {
+      width: 100%; /* Full width for smaller screens */
+      height: auto; /* Adjust height dynamically */
+  }
+
+  /* Make the guess input box responsive */
+  #guess-input {
+      width: 100%;
+  }
+}

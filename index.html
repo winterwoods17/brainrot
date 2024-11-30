@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="home-page">
+    <h1>Pick Your Card!</h1>
+    <div class="cards">
+      <div class="card" onclick="startGame('people')">People</div>
+      <div class="card" onclick="startGame('logos')">Logos</div>
+      <div class="card" onclick="startGame('animals')">Animals</div>
+    </div>
+  </div>
+
+  <!-- Game Page -->
+  <div id="game-page" style="display: none;">
+    <div class="game-container">
+      <!-- Grid Section -->
+      <div class="grid" id="grid">
+        <!-- Grid cells will be populated dynamically here -->
+      </div>
+
+      <!-- Game Control Section -->
+      <div class="game-right">
+        <h1 id="category-title"></h1>
+        
+        <!-- Lives Display -->
+        <div id="lives">
+          Lives:
+        </div>
+
+        <!-- Reveal Button -->
+        <button id="reveal-button" onclick="revealTiles()">Reveal More Tiles</button>
+
+        <!-- Guessing Box -->
+        <input type="text" id="guess-input" placeholder="Enter your guess">
+        <button id="submit-button" onclick="submitGuess()">Submit</button>
+
+        <!-- Message -->
+        <p id="message"></p>
+
+        <!-- Control Buttons -->
+        <button id="go-back-button" onclick="goBack()">Go Back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Result Pop-up Modal -->
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="result-image" src="" alt="Result Image">
+      <p id="result-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
