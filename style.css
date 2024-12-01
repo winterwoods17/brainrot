@@ -39,7 +39,7 @@ body {
 
 .card:hover {
   background-color: #ffd60a; 
-  color: #0d1b2a;
+  color: #003566;
   transform: scale(1.15);
 }
 
